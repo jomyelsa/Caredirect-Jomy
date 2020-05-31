@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="test.CompanyTest">
+        <methods>
+          <include name="beforemethod"/>
+          <include name="beforeTest"/>
+          <include name="setup"/>
+          <include name="verifycompanyclick" invocation-numbers="0 1 2"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- test.CompanyTest -->
+      <class name="test.DivisionTest">
+        <methods>
+          <include name="afterTest"/>
+          <include name="verifydivisionclick" invocation-numbers="0 1 2"/>
+          <include name="setup"/>
+          <include name="beforeTest"/>
+          <include name="beforemethod"/>
+        </methods>
+      </class> <!-- test.DivisionTest -->
+      <class name="test.LoginTest">
+        <methods>
+          <include name="beforemethod"/>
+          <include name="setup"/>
+          <include name="verifylogin" invocation-numbers="0 1 2"/>
+        </methods>
+      </class> <!-- test.LoginTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
